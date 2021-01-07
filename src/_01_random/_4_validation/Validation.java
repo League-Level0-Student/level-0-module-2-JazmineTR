@@ -12,11 +12,14 @@ public class Validation {
 		
 		Random randomMaker = new Random();
 		
-		int randomNumber = randomMaker.nextInt(5);
 		
-		System.out.println(randomNumber);
+		
+		
 
 		// 1. Use each value of randomNumber to give the user a random compliment.
+		for(int i=0;i<10;i= i+1) {
+			int randomNumber = randomMaker.nextInt(6);
+			System.out.println(randomNumber);
 		if(randomNumber == 0) {
 			JOptionPane.showMessageDialog(null," Your smile is contagious");
 		}
@@ -36,6 +39,8 @@ public class Validation {
 		if(randomNumber == 5) {
 			JOptionPane.showMessageDialog(null," You're a gift to those around you");
 		}
+		}
+		
 		// 2. Repeat all the code above 10 times
 		
 		// 3. Find someone to test out your program. They will like it :)
