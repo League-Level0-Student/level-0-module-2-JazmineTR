@@ -16,7 +16,7 @@ public class AnimalFarm {
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
-	boolean canPlaySounds = false;
+	boolean canPlaySounds = true;
 
 	
 	public static void main(String[] args) {
@@ -34,6 +34,18 @@ public class AnimalFarm {
 		String animal = JOptionPane.showInputDialog(" What animal do you want? Selection: Cow,Duck,Dog,Cat,llama)" );
 	if(animal.equalsIgnoreCase("Cat" )) {
 		meow();
+	}
+	if(animal.equalsIgnoreCase("Dog")) {
+		woof();
+	}
+	if(animal.equalsIgnoreCase("Cow")) {
+		moo();
+	}
+	if(animal.equalsIgnoreCase("Duck")) { 
+		quack();
+	}
+	if(animal.equalsIgnoreCase("llama")) {
+		llamaScream();
 	}
 	}
 
